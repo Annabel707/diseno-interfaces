@@ -1,0 +1,51 @@
+.a {
+  float: left;
+  padding: 10px;
+}
+.b {
+  float: right;
+  padding: 10px;
+}
+.foto{
+  width:40%;
+  padding:50px;
+  float:left;
+}
+.c {
+  float: left;
+  padding: 10px;
+}
+.divBienvenida{
+  padding:30px;
+}
+.secciones{
+  display:flex;
+  justify-content: center;
+  gap:20px;
+}
+.seccion{
+  width:30%;
+  display:inline-block;
+  margin:10px;
+  padding:10px;
+}
+.f {
+  float: left;
+
+  padding: 10px;
+}
+.g {
+  float: right;
+  clear: both;
+  padding: 10px;
+}
+
+.nofloat {
+  clear: both;
+}
+
+@media all and(max-width:600px){
+  .foto, .divBienvenida, .seccion{
+    width:100%;
+  }
+}

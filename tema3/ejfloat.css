@@ -1,0 +1,40 @@
+.a {
+  float: left;
+  padding: 10px;
+}
+.a div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.b {
+  float: right;
+  padding: 10px;
+}
+.b div {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+.c {
+  float: left;
+  padding: 10px;
+}
+.c div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+.d {
+  float: right; /* Cambia este valor a float:left, float:right para ver resultados */
+  padding: 10px;
+}
+.d div {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}
+
+.nofloat {
+  clear: both;
+}
