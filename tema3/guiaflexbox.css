@@ -51,24 +51,24 @@
 /* * justify-items/align-items: Alinea o justifica los items del grid 
  * (Alinea/justifica las filas/columnas de los ítems dentro del grid) 
  */
-.container { 
+/*.container { 
     /* justify-items: start | end | center | stretch (default); */ 
     /* align-items: start | end | center | stretch (default); */ 
-}
+/*}
 
 /* * grid-gap: Define el tamaño del espacio entre las filas/columnas del grid 
  */
-.container { 
+/*.container { 
     /* grid-row-gap: 10px; */ 
     /* grid-column-gap: 20px; */ 
     /* grid-gap: 10px 20px; */ /* carril de filas y columnas */
-}
+/*}
 
 /* * grid-auto-flow: Coloca automáticamente elementos que no están explícitamente ubicados 
  */
-.container { 
+/*.container { 
     /* grid-auto-flow: row | column | dense; */ 
-}
+/*}
 
 /* * Propiedades de los Ítems 
  */
@@ -76,36 +76,36 @@
 /* * grid-row/grid-column/grid-column + grid-row: Indica la ubicación basada en columnas/filas dentro del grid 
  */
 
-.item-2 { 
+/*.item-2 { 
     /* grid-row-start: 2; */ /* Fila 2 a 4 */
     /* grid-row-end: 4; */
-}
+/*}
 
 .item-3 { 
     /* grid-row: 1/4; */ /* Fila 1 a 4 */
     /* grid-row: 1/span 3; */ /* Fila 1 abarcando 3 filas */
-}
+/*}
 
 .item-1 { 
     /* grid-column-start: span 2; */ /* Columna 1 abarcando 2 columnas */
-}
+/*}
 
 .item-2 { 
     /* grid-column-start: 3; */ /* Columna 3 a 4 */
     /* grid-column-end: 4; */
-}
+/*}
 
 .item { 
     /* grid-column: 1/span 3; */
     /* grid-row: 2/span 2; */
-}
+/*}
 
 /* * justify-self/align-self: Alinea Vertical u horizontalmente el contenido de una celda individual 
  */
-.item-a { 
+/*.item-a { 
     /* justify-self: start | end | center | stretch (default); */ 
     /* align-self: start | end | center | stretch (default); */ 
-}
+/*}
 
 /* * --------------------------------------------------------------------------------------------------
  * CSS Flexbox Layout Cheatsheet 
@@ -114,53 +114,53 @@
 
 /* * display: Define un contenedor flexible, permitiendo alinear sus hijos directos de la forma que determinamos 
  */
-.container { 
+/*.container { 
     /* display: flex; */ 
     /* display: inline-flex; */ 
-}
+/*}
 
 /* * flex-direction/flex-wrap 
  */
 
 /* flex-direction: Dirección de los ítems en fila o columna */
-.container { 
+/*.container { 
     /* flex-direction: row | row-reverse | column | column-reverse; */ 
-}
+/*}
 
 /* flex-wrap: Determina si los ítems se ajustan en una línea */
-.container { 
+/*.container { 
     /* flex-wrap: nowrap | wrap | wrap-reverse; */ 
-}
+/*}
 
 /* * flex-flow (flex-direction + flex-wrap - Shorthand) 
  */
-.container { 
+/*.container { 
     /* flex-flow: row (Flex-direction) wrap (flex-wrap); */ /* ERROR: (Flex-direction) y (flex-wrap) no son sintaxis CSS. Se debe usar solo los valores: row wrap; */
-    flex-flow: row wrap; 
+    /*flex-flow: row wrap; 
 }
 
 /* * justify-content/align-items: Alinea los items en sentido horizontal y vertical 
  */
 
 /* justify-content: Alineación horizontal de los ítems */
-.container { 
+/*.container { 
     /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */ 
-}
+/*}
 
 /* align-items: Alineación vertical de los ítems */
-.container { 
+/*.container { 
     /* align-items: flex-start | flex-end | center | stretch | baseline; */ 
-}
+/*}
 
 /* * align-content: Alinea los ítems en sentido vertical y horizontal (cuando hay múltiples líneas) 
  */
-.container { 
+/*.container { 
     /* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */ 
-}
+/*}
 
 /* * flex-grow/flex-shrink/flex-basis 
  */
-.item { 
+/*.item { 
     /* flex-grow: 3; */ /* Define en qué proporción crece un ítem (Número - 0 por defecto) */
 
     /* flex-shrink: 2; */ /* Define la capacidad de un objeto flexible para contraerse si es necesario (Número - 1 por defecto) */
@@ -168,18 +168,18 @@
     /* flex-basis: auto; */ /* Define el tamaño de un ítem antes de distribuir el espacio restante */
     /* flex-basis: 10%; */
     /* flex-basis: 5rem; */
-}
+/*}
 
 /* * order 
  */
 
 /* Orden de los ítems, permitiendo colocar un elemento en un orden diferente al que le corresponde en el código */
-.item { 
+/*.item { 
     /* order: 5; */ /* Número - 0 por defecto */
-}
+/*}
 
 /* * align-self: Permite alinear de forma individual un elemento 
  */
-.item:nth-child(3) { 
+/*.item:nth-child(3) { 
     /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */ 
-}
+/*}
