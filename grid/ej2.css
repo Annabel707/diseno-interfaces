@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 50px;
+}
+
+.todo{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 3fr 3fr 2fr 2fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "promos promos promos"
+    "header header header"
+    "aside . fotitos"
+    "aside fototexto fototexto"
+    "aside tresfoto tresfoto"
+    "dostexto dostexto dostexto"
+    "footer footer footer"
+    ;
+}
+.promos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-area: promos;
+    background-color: blueviolet;
+    justify-items: center;
+    align-items: center;
+}
+.promos img{
+    display: grid;
+    justify-content: space-around;
+    
+}
+header{
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "h1 ul";
+    background-color: blue;
+    justify-items: center;
+    align-items: center;
+}
+
+
+h1{
+    display: grid;
+    grid-area: h1;
+    
+}
+nav{
+    display: grid;
+    width: 100%;
+}
+ul{
+    display: grid;
+    grid-area: ul;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:"li1 li2 li3";
+}
+
+.li1{
+    grid-area: li1;
+}
+.li2{
+    grid-area: li2;
+}
+.li3{
+    grid-area: li3;
+}
+aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-areas: 
+    "img img"
+    "raya raya"
+    "pabajo1 pabajo2"
+    ;
+    grid-area: aside;
+    justify-items: center;
+    align-items: center;
+    background-color: aquamarine;
+
+}
+.fotoaside{
+    grid-area: img;
+}
+.raya{
+    
+    grid-area: raya;
+}
+.pabajo1{
+    grid-area:pabajo1;
+}
+.pabajo2{
+    grid-area:pabajo2;
+}
+
+
+
+.fotitos{
+    grid-area: fotitos;
+    background-color: pink;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fototexto{
+    grid-area: fototexto;
+    background-color: green;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tresfoto{
+    grid-area: tresfoto;
+    background-color: yellow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dostexto{
+    grid-area: dostexto;
+    background-color: brown;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+}
+footer{
+    grid-area: footer;
+    background-color: beige;
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px
+}
+.f{
+    justify-self: flex-end;
+    
+}
+.numero{
+    justify-self: flex-start;
+}
